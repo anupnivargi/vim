@@ -4,9 +4,7 @@ Vim configuration with plugins
 
 Installation
 
-git clone git@github.com:anupnivargi/vim.git 
-
-~/git/vim
+git clone git@github.com:anupnivargi/vim.git ~/git/vim
 
 cd git/vim
 
