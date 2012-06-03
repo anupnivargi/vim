@@ -4,6 +4,7 @@
 " =================================================================================================
 "
 call pathogen#infect()
+call pathogen#helptags()
 
 set nocompatible                  " Load VIM in nocompatible mode to use enhanced features
 
@@ -23,7 +24,7 @@ set wildignore+=.git,.svn
 "Images
 set wildignore+=*.png,*.jpg,*.jpeg,*.gif,*.bmp
 "Other
-set wildignore+=*.swf,*.air,*.psd,*.ttf,*.woff,*.svg,*.eot
+set wildignore+=*.swf,*.air,*.psd,*.ttf,*.woff,*.svg,*.eot,*.mp3,*.wav,*.mov,*.avi,*.mpg,*.ogg,*.mp4
 "Tmp and Log
 set wildignore+=tmp,log
 " Visual Information
@@ -43,6 +44,7 @@ set noerrorbells
 set novisualbell
 
 " Visual Enhancement
+colorscheme desert
 syntax enable                     " Enable syntax highlighting
 set cursorline                    " Highlight the cursor line
 set showmatch                     " Highlight matching bracets
