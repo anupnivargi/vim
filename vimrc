@@ -22,7 +22,7 @@ set hidden                        " Handle multpile buffers better
 "Version Control Files
 set wildignore+=.git,.svn
 "Images
-set wildignore+=*.png,*.jpg,*.jpeg,*.gif,*.bmp
+set wildignore+=*.png,*.jpg,*.jpeg,*.gif,*.bmp,*.ttf,*.otf
 "Other
 set wildignore+=*.swf,*.air,*.psd,*.ttf,*.woff,*.svg,*.eot,*.mp3,*.wav,*.mov,*.avi,*.mpg,*.ogg,*.mp4
 "Tmp and Log
@@ -61,7 +61,8 @@ set autoindent                    " Auto indent
 set smartindent                   " Smart indent
 set shiftwidth=2                  " Maintain 2 level indentation
 set tabstop=2                     " 2 level indentation for Tab
-set wrap linebreak textwidth=0    " Wrap lines
+set textwidth=79                  " Wrap lines
+autocmd BufNewFile,BufRead * setlocal formatoptions+=t
 
 " Search
 set ignorecase                    " Case insensitive search
@@ -70,7 +71,7 @@ set hlsearch                      " Highlight search things
 set incsearch                     " Incremental search
 
 " autocmd! bufwritepost vimrc source ~/.vim_runtime/vimrc
-let g:ackprg="ack-grep -H --nocolor --nogroup --column"
+"let g:ackprg="ack-grep -H --nocolor --nogroup --column"
 " Aliases
 let mapleader = ","
 map <leader>n o<ESC><CR>
