@@ -1,9 +1,0 @@
-let g:netrw_dirhistmax  =10
-let g:netrw_dirhist_cnt =7
-let g:netrw_dirhist_1='/Users/anupnivargi/code/github/Marketing-Website/_layouts'
-let g:netrw_dirhist_2='/Users/anupnivargi/code/github/Marketing-Website/_includes'
-let g:netrw_dirhist_3='/Users/anupnivargi/code/github/Marketing-Website'
-let g:netrw_dirhist_4='/Users/anupnivargi/code/vim/bundle'
-let g:netrw_dirhist_5='/Users/anupnivargi/code/redhat/rhport'
-let g:netrw_dirhist_6='/Users/anupnivargi/code/redhat/cephpgc'
-let g:netrw_dirhist_7='/Users/anupnivargi/code/redhat/rh-security-api-doc/.git'
