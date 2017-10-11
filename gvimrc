@@ -9,4 +9,4 @@ colorscheme IR_Black     " Colorscheme
 set guioptions+=c       " Reload the files edited outside VIM without alert
 set guioptions-=T       " Hide Gvim top toolbar
 set guioptions+=i       " Use VIM icon
-
+set colorcolumn=80      " Show visual color column limit
