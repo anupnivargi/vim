@@ -83,6 +83,12 @@ map   <silent> <F5> mmgg=G'm
 "Use F5 to auto indent full file and jump to last cursor position in insert
 "mode
 imap  <silent> <F5> <Esc> mmgg=G'm
-"Command-T automatically open selected files in new tabs
-let g:CommandTAcceptSelectionMap = '<C-t>'
-let g:CommandTAcceptSelectionTabMap = '<CR>'
+let g:ctrlp_prompt_mappings = {
+    \ 'AcceptSelection("e")': ['<c-t>'],
+    \ 'AcceptSelection("t")': ['<cr>', '<2-LeftMouse>'],
+    \ }
+let g:ctrlp_custom_ignore = 'node_modules\|DS_Store\|git|docs'
+
+nnoremap <leader>t :CtrlP<CR>
+
+let g:ruby_indent_access_modifier_style="indent" 

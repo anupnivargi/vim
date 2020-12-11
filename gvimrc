@@ -1,8 +1,10 @@
 "This file has settings for graphical VI i.e gvim
 
 " Looks
-set background=dark     " Background
+set background=light     " Background
+colorscheme colibri
 
+set gfn=SF\ Mono\ Light:h18
 " Other GUI options
 set guioptions+=c       " Reload the files edited outside VIM without alert
 set guioptions-=T       " Hide Gvim top toolbar
